@@ -82,13 +82,13 @@ FbxString GetNodeInfo(
 // Create a marker to use a point of interest for the camera. 
 FbxNode* CreateMarker(
                         FbxScene* pScene, 
-                        char* pName
+	const char* pName
                       );
 
 // Create a camera
 FbxNode* CreateCamera(
                         FbxScene* pScene, 
-                        char* pName
+	const char* pName
                       );
 
 // Create a cube mesh

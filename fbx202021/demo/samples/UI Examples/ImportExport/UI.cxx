@@ -15,7 +15,7 @@
 #include "UI.h"
 
 // FBXSDK calls are done in ImportExport.cxx
-#include "../Common/ImportExport.h" 
+#include "../../Common/ImportExport.h" 
 
 #define MAX_LOADSTRING 100
 

@@ -253,7 +253,7 @@ bool SaveScene(FbxManager* pSdkManager, FbxDocument* pScene, const char* pFilena
                 if (pSdkManager->GetIOPluginRegistry()->WriterIsFBX(lFormatIndex))
                 {
                     FbxString lDesc =pSdkManager->GetIOPluginRegistry()->GetWriterFormatDescription(lFormatIndex);
-                    char *lASCII = "ascii";
+                    const char *lASCII = "ascii";
                     if (lDesc.Find(lASCII)>=0)
                     {
                         pFileFormat = lFormatIndex;
@@ -457,7 +457,7 @@ FbxString GetNodeInfo( const FbxNode* pNode )
 }
 
 // Create a marker to use a point of interest for the camera. 
-FbxNode* CreateMarker(FbxScene* pScene, char* pName)
+FbxNode* CreateMarker(FbxScene* pScene, const char* pName)
 {
     FbxMarker* lMarker = FbxMarker::Create(pScene,pName);
 
@@ -469,7 +469,7 @@ FbxNode* CreateMarker(FbxScene* pScene, char* pName)
 }
 
 // Create a camera.
-FbxNode* CreateCamera(FbxScene* pScene, char* pName)
+FbxNode* CreateCamera(FbxScene* pScene, const char* pName)
 {
     FbxCamera* lCamera = FbxCamera::Create(pScene,pName);
 
