@@ -74,6 +74,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImportExport", "demo\sample
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SceneTreeView", "demo\samples\UI Examples\SceneTreeView\SceneTreeView.vcxproj", "{08424BCB-1673-4700-B856-746CE2A70CA9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{C71A6A96-B23E-4D7C-849A-C8857D431C7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libglew", "thirdparty\glew-2.2.0\libglew.vcxproj", "{664E6F0D-6784-4760-9565-D54F8EB1EDF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -196,6 +200,10 @@ Global
 		{08424BCB-1673-4700-B856-746CE2A70CA9}.Debug|x64.Build.0 = Debug|x64
 		{08424BCB-1673-4700-B856-746CE2A70CA9}.Release|x64.ActiveCfg = Release|x64
 		{08424BCB-1673-4700-B856-746CE2A70CA9}.Release|x64.Build.0 = Release|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Debug|x64.ActiveCfg = Debug|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Debug|x64.Build.0 = Debug|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Release|x64.ActiveCfg = Release|x64
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -234,6 +242,7 @@ Global
 		{92EBDB46-DD46-4B16-B573-82450178C34D} = {0CCB55C2-B7C1-4CD4-8CF6-C261313C4D75}
 		{931961E5-F027-4F7B-B819-9838D9187F63} = {0CCB55C2-B7C1-4CD4-8CF6-C261313C4D75}
 		{08424BCB-1673-4700-B856-746CE2A70CA9} = {0CCB55C2-B7C1-4CD4-8CF6-C261313C4D75}
+		{664E6F0D-6784-4760-9565-D54F8EB1EDF4} = {C71A6A96-B23E-4D7C-849A-C8857D431C7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
