@@ -11,7 +11,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DrawScene.h" />
+    <ClInclude Include="DrawText.h" />
+    <ClInclude Include="GetPosition.h" />
+    <ClInclude Include="GlFunctions.h" />
+    <ClInclude Include="SceneCache.h" />
+    <ClInclude Include="SceneContext.h" />
+    <ClInclude Include="SetCamera.h" />
+    <ClInclude Include="targa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawScene.cxx" />
+    <ClCompile Include="DrawText.cxx" />
+    <ClCompile Include="GetPosition.cxx" />
+    <ClCompile Include="GlFunctions.cxx" />
     <ClCompile Include="main.cxx" />
+    <ClCompile Include="SceneCache.cxx" />
+    <ClCompile Include="SceneContext.cxx" />
+    <ClCompile Include="SetCamera.cxx" />
+    <ClCompile Include="targa.cxx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -64,13 +82,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>FBXSDK_SHARED;_DEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include\fbx202021</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\fbx202021;$(SolutionDir)thirdparty\glew-2.2.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libfbxsdk.lib;libCommon.lib</AdditionalDependencies>
+      <AdditionalDependencies>libfbxsdk.lib;libCommon.lib;libglew.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -83,7 +101,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>FBXSDK_SHARED;NDEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include\fbx202021</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\fbx202021;$(SolutionDir)thirdparty\glew-2.2.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -91,7 +109,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libfbxsdk.lib;libCommon.lib</AdditionalDependencies>
+      <AdditionalDependencies>libfbxsdk.lib;libCommon.lib;libglew.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
