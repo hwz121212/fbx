@@ -15,14 +15,12 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="DisplayCommon.h" />
     <ClInclude Include="GeometryUtility.h" />
-    <ClInclude Include="ImportExport.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimationUtility.cxx" />
     <ClCompile Include="Common.cxx" />
     <ClCompile Include="DisplayCommon.cxx" />
     <ClCompile Include="GeometryUtility.cxx" />
-    <ClCompile Include="ImportExport.cxx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
