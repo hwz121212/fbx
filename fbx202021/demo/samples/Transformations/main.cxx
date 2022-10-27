@@ -30,7 +30,7 @@
 
 #include <fbxsdk.h>
 #include "../Common/Common.h"
-#include "DisplayCommon.h"
+#include "../Common/DisplayCommon.h"
 
 const char * SAMPLE_FILENAME = "JointHierarchy.fbx";
 

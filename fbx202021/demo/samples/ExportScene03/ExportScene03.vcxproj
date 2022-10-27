@@ -12,6 +12,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cxx" />
+    <ClCompile Include="MyKFbxMesh.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyKFbxMesh.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

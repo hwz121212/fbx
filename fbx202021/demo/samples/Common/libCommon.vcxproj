@@ -13,11 +13,13 @@
   <ItemGroup>
     <ClInclude Include="AnimationUtility.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="DisplayCommon.h" />
     <ClInclude Include="GeometryUtility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimationUtility.cxx" />
     <ClCompile Include="Common.cxx" />
+    <ClCompile Include="DisplayCommon.cxx" />
     <ClCompile Include="GeometryUtility.cxx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
